@@ -1,17 +1,48 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace ChallengesWithTestsMark8
 {
     public class ChallengesSet04
     {
+
+        int even = 0;
+        int odd = 0;
         public int AddEvenSubtractOdd(int[] numbers)
         {
-            throw new NotImplementedException();
+            
+
+            foreach (var number in numbers)
+            {
+                if (number %2 == 0)
+                even += number;
+
+                else
+                    odd +=number;
+            }
+
+            return even - odd;
+
         }
 
         public int GetLengthOfShortestString(string str1, string str2, string str3, string str4)
         {
-            throw new NotImplementedException();
+           List<int> sLength = new List<int>();
+
+            int strlen1 = str1.Length; 
+            int strlen2 = str2.Length;
+            int strlen3 = str3.Length;
+            int strlen4 = str4.Length;
+
+            sLength.Add(strlen1);
+            sLength.Add(strlen2);
+            sLength.Add(strlen3);
+            sLength.Add(strlen4);
+
+            sLength.
+
+       
+            
         }
 
         public int GetSmallestNumber(int number1, int number2, int number3, int number4)
