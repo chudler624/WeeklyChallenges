@@ -29,18 +29,19 @@ namespace ChallengesWithTestsMark8
         {
            List<int> sLength = new List<int>();
 
-            int strlen1 = str1.Length; 
-            int strlen2 = str2.Length;
-            int strlen3 = str3.Length;
-            int strlen4 = str4.Length;
+            //int strlen1 = str1.Length; 
+            //int strlen2 = str2.Length;
+            //int strlen3 = str3.Length;
+            //int strlen4 = str4.Length;
 
-            sLength.Add(strlen1);
-            sLength.Add(strlen2);
-            sLength.Add(strlen3);
-            sLength.Add(strlen4);
+            //sLength.Add(strlen1);
+            //sLength.Add(strlen2);
+            //sLength.Add(strlen3);
+            //sLength.Add(strlen4);
 
-            sLength.
+            //sLength.
 
+            throw new NotImplementedException();
        
             
         }

@@ -26,10 +26,16 @@ namespace ChallengesWithTestsMark8
 
         public bool IsNumberEven(int number)
         {
-           if (number %2 == 0)
+           if (number % 2 == 0)
+            {
                 return true;
+
+            }
            else
+            {
                 return false;
+
+            }
         }
 
         public bool IsNumberOdd(int num)
@@ -54,36 +60,45 @@ namespace ChallengesWithTestsMark8
         }
 
         
-        public int Sum(int[] numbers)
-            
+        public int Sum(int[] numbers)            
         {
-            int total = 0;
-            for (int i=0; i<= numbers.Length; i++)
+            if (numbers == null)
             {
-                total += numbers[i];
-                return total;
+                return 0;
             }
 
+            int total = 0;
+            for (int i=0; i < numbers.Length; i++)
+            {
+                total += numbers[i];
+                
+            }
+            return total; 
+
+           
         }
         
         public int SumEvens(int[] numbers)
         {
             int totalEvens = 0;
-            for (int i = 0; i <= numbers.Length && i %2==0; i++)
+            for (int i = 0; i < numbers.Length; i++)
             {
                 totalEvens += numbers[i];
-                return totalEvens;
+                
             }
+            return totalEvens;
         }
 
         public bool IsSumOdd(List<int> numbers)
         {
-            int sum = 0;
-            sum = numbers.Sum();
+            //int sum = 0;
+            //sum = numbers.Sum();
 
-            if (sum % 2 == 0)
-                return false;
-            else return true;
+            //if (sum % 2 == 0)
+            //    return false;
+            //else return true;
+
+            throw new NotImplementedException();
                 
         }
 
